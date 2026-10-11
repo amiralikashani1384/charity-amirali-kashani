@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head><meta charset="UTF-8"><title>maskable</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:100%;height:100%;overflow:hidden}
+  .icon{width:100%;height:100%;display:grid;place-items:center;
+        background:radial-gradient(120% 120% at 78% 6%, #1B3E77 0%, #0C2141 52%, #071224 100%);
+        position:relative;overflow:hidden}
+  .glow{position:absolute;width:80%;height:80%;border-radius:50%;background:#3B8CFF;opacity:.34;filter:blur(36px);top:-26%;right:-22%}
+  svg{position:relative;width:44%;height:44%}
+</style></head>
+<body>
+  <div class="icon"><span class="glow"></span>
+    <svg viewBox="0 0 64 64">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#7CC4FF"/><stop offset=".55" stop-color="#3B8CFF"/><stop offset="1" stop-color="#FF6FA5"/>
+      </linearGradient></defs>
+      <circle cx="32" cy="32" r="19.5" fill="none" stroke="url(#g)" stroke-width="6.5"/>
+      <path d="M19.5 32h6.2l3.5-8.6L34.8 41.4 38.4 32h6.2" fill="none" stroke="#EAF2FF" stroke-width="3.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</body>
+</html>

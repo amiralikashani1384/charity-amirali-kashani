@@ -1,0 +1,18 @@
+{
+  "name": "ایونت خیریهٔ حلقهٔ آبی — پویش پایش قند خون",
+  "short_name": "حلقهٔ آبی",
+  "description": "دعوت‌نامهٔ تعاملی ایونت خیریهٔ پایش قند خون: شمارش معکوس، ماشین‌حساب اثر کمک، کارت ورود با QR و دیوار مهربانی.",
+  "lang": "fa-IR",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#071224",
+  "theme_color": "#3B8CFF",
+  "categories": ["health", "charity", "events"],
+  "icons": [
+    { "src": "assets/img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/img/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

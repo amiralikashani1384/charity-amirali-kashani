@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>قالب تصویر OG — حلقهٔ آبی</title>
+<style>
+  @font-face {
+    font-family: "Vazirmatn";
+    src: url("../assets/fonts/Vazirmatn-var.woff2") format("woff2");
+    font-weight: 100 900;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; overflow: hidden; }
+  body {
+    font-family: "Vazirmatn", sans-serif;
+    background: radial-gradient(120% 120% at 80% 0%, #14305E 0%, #0A1A33 45%, #071224 100%);
+    color: #EAF2FF;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+  }
+  .blob { position: absolute; border-radius: 50%; filter: blur(80px); }
+  .b1 { width: 50%; height: 90%; background: #3B8CFF; opacity: .34; top: -22%; right: -10%; }
+  .b2 { width: 42%; height: 80%; background: #FF6FA5; opacity: .26; bottom: -30%; left: -8%; }
+  .b3 { width: 30%; height: 60%; background: #9B8CFF; opacity: .22; top: 34%; left: 42%; }
+
+  .card {
+    position: relative;
+    width: 90%; height: 84%;
+    border-radius: 40px;
+    background: rgba(255,255,255,.055);
+    border: 1px solid rgba(255,255,255,.18);
+    box-shadow: 0 40px 90px -50px rgba(0,0,0,.95), inset 0 1px 0 rgba(255,255,255,.14);
+    padding: 4.4% 5%;
+    display: flex; align-items: center; gap: 5%;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+  }
+  .card::before {
+    content: "";
+    position: absolute; inset: 0 0 auto; height: 10px;
+    background: linear-gradient(120deg, #7CC4FF, #3B8CFF 45%, #FF6FA5);
+  }
+
+  .right { flex: 1 1 60%; display: flex; flex-direction: column; gap: 2.6%; }
+  .badge {
+    align-self: flex-start;
+    font-size: 19px; font-weight: 700;
+    color: #FFB3CE;
+    background: rgba(255,111,165,.16);
+    border: 1px solid rgba(255,111,165,.5);
+    padding: 6px 18px; border-radius: 999px;
+  }
+  h1 { font-size: 58px; font-weight: 900; line-height: 1.35; letter-spacing: -.02em; }
+  h1 span {
+    background: linear-gradient(120deg, #7CC4FF, #3B8CFF 45%, #FF6FA5);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  p { font-size: 23px; color: #BFD2F0; line-height: 1.8; }
+  .meta { display: flex; gap: 12px; flex-wrap: wrap; }
+  .meta span {
+    font-size: 19px; font-weight: 600; color: #DCE8FF;
+    background: rgba(255,255,255,.07);
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 999px; padding: 7px 18px;
+  }
+
+  .left { flex: 0 0 33%; display: flex; flex-direction: column; align-items: center; gap: 5%; }
+  .ring-wrap { position: relative; width: 90%; aspect-ratio: 1; display: grid; place-items: center; }
+  .ring-wrap::after {
+    content: ""; position: absolute; inset: 14%; border-radius: 50%;
+    background: radial-gradient(circle, rgba(59,140,255,.55), transparent 70%);
+    filter: blur(26px);
+  }
+  .ring-wrap svg { width: 100%; height: 100%; position: relative; z-index: 2; }
+  .brand { text-align: center; }
+  .brand b { display: block; font-size: 27px; font-weight: 900; }
+  .brand small { font-size: 17px; color: #9FB6DC; }
+    </style>
+</head>
+<body>
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+
+  <div class="card">
+    <div class="right">
+      <span class="badge">به مناسبت روز جهانی دیابت</span>
+      <h1>ایونت خیریهٔ <span>حلقهٔ آبی</span><br>برای پایش قندِ بچه‌ها</h1>
+      <p>یک روز مهربانی: تست رایگان قند، پویش آبی ۵ کیلومتری و حمایت از هزینهٔ پایش بیماران.</p>
+      <div class="meta">
+        <span>📅 جمعه ۲۲ آبان ۱۴۰۵</span>
+        <span>🕘 ۹ صبح تا ۷ شب</span>
+        <span>📍 خانهٔ مهربانی، تهران</span>
+        <span>💙 ورود آزاد</span>
+      </div>
+    </div>
+
+    <div class="left">
+      <div class="ring-wrap">
+        <svg viewBox="0 0 240 240">
+          <defs>
+            <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#7CC4FF"/><stop offset=".5" stop-color="#3B8CFF"/><stop offset="1" stop-color="#FF6FA5"/>
+            </linearGradient>
+          </defs>
+          <circle cx="120" cy="120" r="112" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1.4" stroke-dasharray="2 12"/>
+          <circle cx="120" cy="120" r="96" fill="none" stroke="url(#rg)" stroke-width="13" stroke-linecap="round"/>
+          <path d="M64 122h24l10-26 16 52 12-30h50" fill="none" stroke="url(#rg)" stroke-width="8"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="brand">
+        <b>حلقهٔ آبی</b>
+        <small>پویش خیریهٔ پایش قند</small>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
